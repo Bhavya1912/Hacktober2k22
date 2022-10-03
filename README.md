@@ -1,5 +1,5 @@
 # Hacktober2k22
-This is a open source project dedicated to hacktober fest 
+This is a open source project dedicated to hacktober fest
 
 
 Add any project or algorithm in any programming language
@@ -16,6 +16,8 @@ Add any project or algorithm in any programming language
 -🪄 Java
 
 -🪄 Python
+
+-🪄 Ruby
 
 -🪄 Javascript
 
@@ -34,7 +36,7 @@ join the discord  <a href = "https://discord.gg/EvXkeJmt" >server</a>for more in
 
 
 
-Do drop a follow if you like my work 😀 
+Do drop a follow if you like my work 😀
 
 
 
@@ -52,7 +54,7 @@ For example: I have added a personal website.
 ## How to contribute? 🤝
 
 - `Fork` this repo.
-- `Write into a file` of proper category: <br/> 
+- `Write into a file` of proper category: <br/>
 - `Push the changes`with commit messages on whatever you added.
 - `Compare And Pull Request` with proper description and title.
 -  Wait for me to `review` and `merge` your contribution.
@@ -74,7 +76,7 @@ Contributing for the first time? I got you 😀
 
 
 
-- Go to the main page of your forked repo on your account. You will see a `Compare And Pull Request` button. Click that. 
+- Go to the main page of your forked repo on your account. You will see a `Compare And Pull Request` button. Click that.
 
 
 
