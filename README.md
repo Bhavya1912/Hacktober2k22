@@ -41,7 +41,7 @@ Do drop a follow if you like my work 😀
 
 
 
-## On participating in hacktober fest and being in the first `40000` contributors to open pull requests, you get:
+## On participating in hacktober fest and being in the first `4` contributors to open pull requests, you get:
 - Either a tree planted in your name
 - Or a hacktober fest T-Shirt
 
