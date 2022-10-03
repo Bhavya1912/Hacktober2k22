@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.app {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__header {
+  display: flex;
+  justify-content: center;
+  background-color: #E38B29;
+  
+}
+
+.app__header__title{
+  margin-top: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.app__header__title > h2 {
+  font-size: 40px;
+  color: black;
+  
+}
+
+.app__header__title > h3 {
+  margin-top: 4px;
+  color: black;
+  justify-content: center;
+  display: flex;
+}
+
+.app__header__img{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding-right: 20px;
+}
+
+.app__container{
+  background-color: #FDEEDC ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__containerTitles{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFD8A9;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  
+}
+.app__containerT1 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app__containerT2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  
+}
+
+.app__containerParties {
+  padding: 120px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.appcontainerPartiesEachParty {
+  margin: 40px;
+  transition: transform 450ms;
+}
+
+.appcontainerPartiesEachParty:hover {
+  transform: scale(1.08);
+}
+
+.app__bottom{
+  background-color: black;
+}
+
+.app__footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 24px;
+}
+
+@media (max-width: 990px) {
+  .app__containerParties {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 532px) {
+  .app__header__title {
+   margin-left: 25px;
+  }
+}
+
+@media (max-width: 419px) {
+  .app__containerParties {
+    padding: 20px;
+  }
+}
