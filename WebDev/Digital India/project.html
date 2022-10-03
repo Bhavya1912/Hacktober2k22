@@ -1,0 +1,356 @@
+<html>
+<link rel="stylesheet" href="photoalbum.css" />      
+<style>
+body {margin:0;
+  background-image: url("bg.png");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#zx  { width:700px;
+       height:45px;
+       font-family: times, serif; font-size:14pt; font-style:italic;
+       font-size:200%;
+       font-weight:bolder;  
+       background-color:#ffd580;
+       margin:0px auto;
+       text-align:center  ;
+       border-radius:30px;}
+
+#zy  { width:100%;
+       height:45px;
+       background-color:black;
+       margin:0px auto;
+       text-align:center;}
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: solid black 5px;
+    text-align: left;
+    outline: red 1px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A9A9A9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#video  {margin: auto;
+         margin-top:10px;
+width:405px;
+ height:355px;
+ padding-top:2px;}  
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+#ll  { width:1295px;
+       height:60px;
+       background-color:darkgrey; }
+#footer  {width:1300px;  
+        height:410px;
+         background-color:#1D1D1F;
+ border:solid grey 3px;
+       border-radius:5px; 
+}
+#tt {margin:0px auto;
+     font-size:100%;
+     font-weight:bold;
+     color-white;
+      margin-top:70px;
+      width:1293px;
+       height:90px;
+       background-color:black;
+     padding-left:400px ;  }
+#pp  {width:100px;
+             height:120px;  }
+.dropdown-content a:hover {background-color: #A9A9A9}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #A9A9A9;
+}
+
+.button{
+         background-color:#A9A9A9;
+         color:white;
+         border:none;
+         padding:10px 10px;
+         text-align:center;
+         display:inline-block;
+         text-decoration:none;
+         font-size:16px;
+         margin:4px 4px;
+         cursor:pointer;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffd580;
+  color: white;
+}
+.banner{
+  background-image: url("banner.jpg");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-style:solid;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.section {
+  padding: 50px;
+  text-align: center;
+  	background-color: #474e5d;
+  color: white;
+}
+</style>
+<body>
+<div class="topnav">
+  <a class="active" href="project.html">Home</a>
+</div>	
+<br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="1.png" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="2.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br><br><br>
+<div id="zy"><div id="zx">About Us</div></div>
+<br> 	
+<button class="accordion">INFORMATION:</button>
+<div class="panel">
+  <h3><p>
+    Digital India is a campaign launched by the Government of India in order to ensure the Government's services are made available to citizens electronically by improved online infrastructure and by increasing Internet connectivity or making the country digitally empowered in the field of technology. The initiative includes plans to connect rural areas with high-speed internet networks. It consists of three core components: the development of secure and stable digital infrastructure, delivering government services digitally, and universal digital literacy.</p></h3>
+</div><br><br>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+<div id="zy"><div id="zx">VIDEO GALLERY</div></div>
+<center><h1>TESTIMONIALS</h1><center>
+     <video controls width=400 height=300>
+   <source src="https://www.youtube.com/watch?v=xg25U8pubSQ" width=400 height=300 type="video/mp4" >
+     Your Browser Does Not Support The Video.
+     </video></div>
+    <video controls width=400 height=300>
+    <source src="https://youtu.be/6ypKJ7ukjAI"width=400 height=300 type="video/mp4" >
+     Your Browser Does Not Support The Video.
+     </video></div>
+     <video controls width=400 height=300>
+      <source src="https://www.youtube.com/watch?v=rTzGMcOd8D0"type="video/mp4">
+     </video>
+  <video controls width=400 height=300>
+    <source src="https://www.youtube.com/watch?v=uR0-zTyTEOw"width=400 height=300 type="video/mp4" >
+     Your Browser Does Not Support The Video.
+     </video></div><br><br>
+
+<br><br><br><br>
+ 	<img src="footer.jpg" width="100%">
+</body>
+</html> 
