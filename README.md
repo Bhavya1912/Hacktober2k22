@@ -19,6 +19,7 @@ Add any project or algorithm in any programming language
 
 -🪄 Javascript
 
+-🪄 WebDev
 
 After Creating the pull request mention any moderator in the discord <a href = "https://discord.gg/EvXkeJmt" >server</a>
 
