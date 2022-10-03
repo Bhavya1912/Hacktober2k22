@@ -2,12 +2,19 @@
 This is a open source project dedicated to hacktober fest 
 Add any project or algorithm in any programming language
 -🪄 C
+
 -🪄 C++
+
 -🪄 C#
+
 -🪄 PHP
+
 -🪄 Java
+
 -🪄 Python
+
 -🪄 Javascript
+
 
 After Creating the pull request mention any moderator in the discord server https://discord.gg/EvXkeJmt
 
