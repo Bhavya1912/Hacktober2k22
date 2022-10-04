@@ -7,33 +7,33 @@ Languages Supported
 Line 1
 You can add any kind of projects in the languages that are mentioned below:
 
-- C
+-[x] C
 
-- C++
+-[x] C++
 
-- C#
+-[x] C#
 
-- PHP
+-[x] PHP
 
-- Java
+-[x] Java
 
-- Python
+-[x] Python
 
-- Ruby
+-[x] Ruby
 
-- Javascript
+-[x] Javascript
 
-- WebDev
+-[x] WebDev
 
-After Creating the pull request mention any moderator in the discord <a href = "https://discord.gg/EvXkeJmt" >server</a>
+After you have created the pull request, mention any of the moderator on the discord <a href = "https://discord.gg/EvXkeJmt" >server</a>
 
-The PR would not be merged if not mentiond in the server.
-
-
-DSA problem-solution would not be accepted.
+1. The PR would not be merged if not mentiond in the server.
 
 
-join the discord  <a href = "https://discord.gg/EvXkeJmt" >server</a>for more information.
+2. DSA problem-solution would not be accepted.
+
+
+Join our Discord <a href = "https://discord.gg/EvXkeJmt" >server</a> for more information.
 
 
 
