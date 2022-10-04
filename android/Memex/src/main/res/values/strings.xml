@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">memex</string>
+    <string-array name="types">
+        <item>General</item>
+        <item>Cricket</item>
+        <item>Football</item>
+        <item>Indian</item>
+        <item>Dank</item>
+
+    </string-array>
+</resources>
