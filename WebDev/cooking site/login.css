@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+
+}
+.contact
+{ 
+    position: relative;
+    min-height: 100vh;
+    padding:50px 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(bg.jpg);
+    background-size: cover;
+
+}
+.contactForm
+{
+    width: 30%;
+    padding: 30px;
+    background: #fff;
+    position: center;
+    
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    position: center;
+    text-align: center;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    position: center;
+}
+.contactForm .inputBox input
+{
+    width:100%;
+    padding: 50px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+    position: center;
+}
+.contactForm .inputBox textarea
+{
+    width:100%;
+    padding: 50px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 50px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666;
+}
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span
+{
+    color:#e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width:100px;
+    background: #00bcd4;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+input[ type="submit"]
+{
+    width:100%;
+    height: 50px;
+    border:1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[ type="submit"]:hover
+{
+    border-color: #2691d9;
+    transition: 0.5s;
+}
+.signup_link
+{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color:#666666;
+}
+.signup_link a
+{
+    color: #2691d9;
+    text-decoration: none;
+}
+.signup_link a:hover
+{
+     text-decoration: underline;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing:border-box ;
+}
+h1
+{
+    text-align:center;
+    color:yellowgreen;
+    padding: 20px;
+}
+
+nav
+{
+    background-color: aquamarine;
+    display: grid;
+     ;
+}
+
+nav ul
+{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px ;
+}
+nav ul a
+{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:black;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+nav ul a:hover
+{
+    background-color: aqua;
+    color: white;
+}
+
+
+
+
+
+
+
+

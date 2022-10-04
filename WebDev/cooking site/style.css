@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing:border-box ;
+}
+.items
+{
+    position: relative;
+    min-height: 100vh;
+    padding:100px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+h1
+{
+    text-align:center;
+    color:yellowgreen;
+    padding: 20px;
+}
+
+nav
+{
+    background-color: aquamarine;
+    display: grid;
+  
+}
+
+nav ul
+{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px ;
+    cursor: pointer;
+}
+nav ul a
+{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:black;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+nav ul a:hover
+{
+    background-color: aqua;
+    color: white;
+}
+.items
+{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    padding: 20px 20px;
+    margin:0 10px 0 0;
+    grid-column-gap: 30px;
+    grid-row-gap:30px;    
+}
+.item img
+{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover
+{
+    transform: scale(1.04);
+}
+.item h4
+{
+    padding: 5px;    
+}
+.item label
+{
+    padding: 2px;    
+    text-align: center;
+    display: inline-table;
+}  
+
+.item button
+{
+    padding:5px 30px;
+    border:none;
+    outline:none;
+    background-color:aquamarine ;
+    color:black;
+    cursor:pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin:0 auto;
+    transition: 0.2s all;
+}
+
+
+.item button:hover
+{
+    transform: scale(1.08);
+}
+
+@media screen and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+.select{
+    width: 60%;
+    height: 580px;
+    padding: 5%;
+    background: blue;
+    position: absolute;
+    top: -1000px;
+    left: 20%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+    
+}
+.select.display{
+    top: 30px;
+    width: 70%;
+    height: 600px;
+}
+.select div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    position: relative;
+    margin: 5px auto;
+}
+.select div img{
+    width: 100%;
+    height: 100%;
+}
+.select div p{
+    padding: 35px;
+    color: wheat;
+}
+.select div price
+{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color: white;
+    width:10%;
+    height: 3%;
+    
+}
+.select div button{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color: white;
+    background-color: red;
+    display: flex;
+   nav-down: 30px;
+}
+.select div button{
+    left: 60%;
+    top: 55%;
+}
+.select label quantity
+{
+   right: 80px;
+}
+.select div span{
+    display: none;
+}
+
+
+
+ul.h2{
+    width: 3%;
+    position: relative;
+    top: 60px;
+    left: 90%;
+    cursor: pointer;
+}
+h2:before{
+    content: attr(data-count);
+    color: white;
+    position: absolute;
+    right: 13px;
+    font-size: 15px;
+    text-align: center;
+    top: 95px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+    cursor:pointer;
+}
+h2.zero:before{
+    opacity: 1;
+    cursor: pointer;
+}

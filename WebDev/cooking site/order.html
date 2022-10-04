@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cook yourself</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="order.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <h1>FOOD STORE</h1>
+    <nav>
+        <ul>
+            <div>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="order.html"><li>SELF COOK</li></a>
+                <a href="login.html"><li>LOGIN</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+            </div>
+            <div class="cart">
+              <h2>  <i class="fa-solid fa-cart-plus"></i></h2>
+            </div>
+         </ul>   
+    </nav>
+    <div class = "container">
+        <div class = "meal-wrapper">
+          <div class = "meal-search">
+            <h2 class = "title">Find Meals For Your Ingredients</h2>
+            <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+              <cite>- Jamie Oliver</cite>
+            </blockquote>
+    
+            <div class = "meal-search-box">
+              <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+              <button type = "submit" class = "search-btn btn" id = "search-btn">
+                <i class = "fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+    
+          <div class = "meal-result">
+            <h2 class = "title">Your Search Results:</h2>
+            <div id= "meal">
+             
+            </div>
+          </div>
+    
+    
+          <div class = "meal-details">
+           
+            <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+              <i class = "fas fa-times"></i>
+            </button>
+    
+            
+            <div class = "meal-details-content">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+      <script src = "script.js"></script>
+</body>
+</html>
