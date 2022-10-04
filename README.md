@@ -1,27 +1,29 @@
 # Hacktober2k22
-This is a open source project dedicated to hacktober fest
+This is an open source project that is dedicated to the hacktober fest for the year 2022. 
 
 
 Add any project in any programming language
+Languages Supported
+Line 1
+You can add any kind of projects in the languages that are mentioned below:
 
+- C
 
--🪄 C
+- C++
 
--🪄 C++
+- C#
 
--🪄 C#
+- PHP
 
--🪄 PHP
+- Java
 
--🪄 Java
+- Python
 
--🪄 Python
+- Ruby
 
--🪄 Ruby
+- Javascript
 
--🪄 Javascript
-
--🪄 WebDev
+- WebDev
 
 After Creating the pull request mention any moderator in the discord <a href = "https://discord.gg/EvXkeJmt" >server</a>
 
@@ -101,7 +103,3 @@ Contributing for the first time? I got you 😀
 
 
 ## Get yourself featured here as an Open Source Contributor 🎉🙌:
-
-
-
-
