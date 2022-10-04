@@ -7,23 +7,23 @@ Languages Supported
 Line 1
 You can add any kind of projects in the languages that are mentioned below:
 
--[x] C
+[x] C
 
--[x] C++
+[x] C++
 
--[x] C#
+[x] C#
 
--[x] PHP
+[x] PHP
 
--[x] Java
+[x] Java
 
--[x] Python
+[x] Python
 
--[x] Ruby
+[x] Ruby
 
--[x] Javascript
+[x] Javascript
 
--[x] WebDev
+[x] WebDev
 
 After you have created the pull request, mention any of the moderator on the discord <a href = "https://discord.gg/EvXkeJmt" >server</a>
 
