@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat left top,url(./images/bg-pattern-bottom-desktop.svg) no-repeat right 0px ;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    max-width: 100%;
+    
+}
+.card{
+    margin: 100px;
+}
+.upper-section{
+   margin-bottom: 50px;
+    display: flex;
+
+}
+.upper-left{
+    width: 50%;
+    /* margin-right: 40px; */
+}
+.upper-left h1{
+    font-size: 40px;
+    width: 50%;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 20px;
+}
+.upper-left p{
+    width: 80%;
+    color:  hsl(303, 10%, 53%);
+    line-height: 1.2;
+}
+.upper-right{
+    width: 50%;
+}
+.star1,.star2,.star3{
+    background-color:hsl(300, 24%, 96%);
+    padding: 10px 3px 10px 10px;
+    color: hsl(300, 43%, 22%);
+    width: 70%;
+    border-radius: 8px;
+    display: flex;
+}
+.icon{
+    margin-right: 20px;
+}
+.star2{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.star3{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.lower-section{
+    display: flex;
+    margin-bottom: 100px;
+}
+.colton,.irene,.anne{
+    background-color:hsl(300, 43%, 22%) ;
+    border-radius: 8px;
+    padding: 25px;
+    color: hsl(300, 24%, 96%);
+}
+.colton{
+    margin-bottom: 40px;
+}
+.irene{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.anne{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+img{
+    border-radius: 50%;
+    
+}
+.head{
+    display: flex;
+    margin-bottom: 20px;
+}
+.name{
+    margin-left: 10px;
+    padding: 20px;
+    line-height: 1.2;
+}
+.name h6{
+    color:hsl(333, 80%, 67%);
+}
+.para{
+    line-height: 1.1;
+}
+@media only screen and (max-width:700px) {
+    .card{
+        margin: 50px 20px;
+    }
+    body{
+        background: url(./images/bg-pattern-top-mobile.svg) no-repeat top,url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom;
+        font-size: 20px;
+    }
+    .upper-section{
+        flex-direction: column;
+    }
+    .upper-left{
+        width: 100%;
+        text-align: center;
+    }
+    .upper-left h1{
+        margin: 0px auto;
+        font-size: 30px;
+        width: 65%;
+    }
+    .upper-left p{
+        margin: 10px auto 0px auto;
+        width: 100%;
+    }
+    .upper-right{
+        width: 100%;
+        margin: 0px auto 0px auto;
+
+    }
+    .star1,.star2,.star3{
+        width: 95%;
+        flex-direction: column;
+        margin: 10px 5px;
+        text-align: center;
+    }
+    .lower-section{
+        flex-direction: column;
+    }
+    .colton,.irene,.anne{
+        margin: 10px;
+    }
+
+}
