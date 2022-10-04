@@ -1,7 +1,7 @@
 # Hacktober2k22
 This is an open source project that is dedicated to the hacktober fest for the year 2022. 
 
-###Languages Supported
+### Languages Supported
 
 You can add any kind of projects in the languages that are mentioned below:
 
