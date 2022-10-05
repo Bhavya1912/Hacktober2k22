@@ -1,0 +1,31 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 5px 10px;
+    color:white;
+    background-color: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    width: 70px;
+    background-color: rgb(16, 16, 151);
+    font-weight: bold;
+}
+.text-center{
+    font-size: medium;
+    text-align: center;
+}
+.card-item{
+    width: 12vw;
+}
+.my-2{
+    margin: 26px 0px;
+}
+.my-1{
+    margin: 5px;
+}
