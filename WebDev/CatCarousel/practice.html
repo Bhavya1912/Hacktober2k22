@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -ms-flex-align: center;
+            height: 100vh;
+            /* width: 100%; */
+            background: url('/CatCarousel/bg.jpg');
+        }
+
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(198, 154, 255);
+            height: 30rem;
+            width: 30rem;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8%;
+            border: 5px solid black;
+        }
+
+
+        .button {
+            background-color: black;
+            color: white;
+            height: 5rem;
+            width: 2rem;
+        }
+
+        .button:hover {
+            background-color: rgb(59, 59, 59);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+
+
+        <div class="box">
+
+            <button class="button" id="prevbutton"><</button>
+                    <img src="/CatCarousel/1.jpg" id="image">
+                    <button class="button" id="nextbutton">></button>
+
+
+        </div>
+
+    </div>
+    <script>
+        const nextButton = document.getElementById('nextbutton');
+        const prevButton = document.getElementById('prevbutton');
+        const image = document.getElementById('image');
+        let count = 1;
+
+        const next = () => {
+            count++;
+            if (count > 4) {
+                count = 1;
+            }
+            console.log(count);
+            const path = `/CatCarousel/${count}.jpg`;
+            image.src = path;
+            console.log(path)
+
+        }
+
+        nextButton.addEventListener("click", () => {
+            next();
+        });
+
+        const prev = () => {
+            count--;
+            if (count < 1) {
+                count = 4;
+            }
+            const path = `/CatCarousel/${count}.jpg`;
+            image.src = path;
+        }
+
+        prevButton.addEventListener("click", () => {
+            prev();
+        });
+    </script>
+</body>
+
+</html>
