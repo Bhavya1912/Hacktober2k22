@@ -100,6 +100,4 @@ Contributing for the first time? I got you 😀
 
 
 
-
-
 ## Get yourself featured here as an Open Source Contributor 🎉🙌:
