@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clock</title>
+    <script src="./app.js"></script>
+</head>
+<body id="Dark" style="transition-duration: 0.7s;";>
+    <div class="container" style="transition-duration: 0.7s;">
+        <div id="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div id="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div id="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+        <span id="theam" onclick="change_color()" style="transition-duration: 1s;">
+         <span id="color"></span>
+         <span id="text">Light Theam</span>
+        </span>
+    </div>
+</body>
+</html>
